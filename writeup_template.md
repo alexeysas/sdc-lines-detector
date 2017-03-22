@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 [image1]: ./examples/grayscale.jpg "Grayscale"
 [image2]: ./test_pipeline/HLS_filter.jpg "HLS filtered"
 [image3]: ./test_pipeline/canny.jpg "Canny Edges"
-[image4]: ./test_pipeline/canny.jpg "Region of Interest"
+[image4]: ./test_pipeline/region.jpg "Region of Interest"
 [image5]: ./test_pipeline/segments.jpg "Hough Segments"
 
 ---

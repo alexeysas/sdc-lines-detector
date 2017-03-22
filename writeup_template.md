@@ -17,6 +17,9 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
 [image2]: ./test_pipeline/HLS_filter.jpg "HLS filtered"
+[image3]: ./test_pipeline/canny.jpg "Canny Edges"
+[image4]: ./test_pipeline/canny.jpg "Region of Interest"
+[image5]: ./test_pipeline/segments.jpg "Hough Segments"
 
 ---
 
@@ -30,7 +33,23 @@ The processing pipeline consisted of 6 steps.
 
 ![alt text][image2]
 
-2. Applyed grayscale, then I .... 
+2. Applyed grayscale to make single channel image.
+
+3. Removed noise using Gaussian Blur so reduce chance of detecting noisy lines.
+
+4. Extracted edges using Canny edge detector gradients based algorithm
+
+[alt text][image3]
+
+5. Applied Region Of Interest to consider only area in front of car to reduce chance of detecting unrelevant lines.
+
+[alt text][image4]
+
+6. Used Probabilistic Hough Line Transform to find possible lines.
+
+[alt text][image5]
+
+7. Removed lines with horizontal scope as they are unlikely road lines. 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 

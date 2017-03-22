@@ -23,11 +23,13 @@ The goals / steps of this project are the following:
 
 ###
 
-My pipeline consisted of 6 steps. 
+The processing pipeline consisted of 6 steps. 
 
-1. I converted the images to HSV color scheme and extract yellow and white color from the image - the most common color for the road lines. HSV is used as it better fits to this task then RGB. This step is mostly used for the optional challenge video due to its complex shadows nature. First two videos works fine with this step skipped, 
+1. I converted the images to HLS color scheme to extract yellow and white color from the image - the most common color for the road lines. Experementaly found that HLS provides better results compared to RGB and HSV for this specific task. This step is mostly used for the optional challenge video due to its complex shadows nature. First two test videos works fine with this step skipped with minimum noticible artifacts. 
 
-grayscale, then I .... 
+[image1]: ./test_pipeline/hls_filter.jpg "Grayscale"
+
+2. Applyed grayscale, then I .... 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 

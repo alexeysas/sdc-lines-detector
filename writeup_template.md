@@ -20,6 +20,7 @@ The goals / steps of this project are the following:
 [image3]: ./test_pipeline/canny.jpg "Canny Edges"
 [image4]: ./test_pipeline/region.jpg "Region of Interest"
 [image5]: ./test_pipeline/segments.jpg "Hough Segments"
+[image6]: ./test_pipeline/final.jpg "Final image"
 
 ---
 
@@ -51,11 +52,11 @@ The processing pipeline consisted of 6 steps.
 
 7. Removed lines with horizontal scope as they are unlikely road lines. 
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+8. As a final step we need to create two lines based on segments data. The easiest way to collect identified segments to left and right cluster of lines is to use slope sign. However, this method can produce some artifacts if we have some noisy lines identified farfrom the original lines. So I've tried to apply different approache. The idea is to create lines clusters based on angle and distance beteween lines (not points). After clusters are created if we have exact two clasters - we are done. If we have 3 or more clusters we need to get rid of noisy clusters using some metric. Good metric is an open question there. 
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+9. Finaly I've used linear regression to combine lines together and got final result.
 
-![alt text][image1]
+![alt text][image6]
 
 
 ###2. Identify potential shortcomings with your current pipeline

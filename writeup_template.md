@@ -39,15 +39,15 @@ The processing pipeline consisted of 6 steps.
 
 4. Extracted edges using Canny edge detector gradients based algorithm
 
-[alt text][image3]
+![alt text][image3]
 
 5. Applied Region Of Interest to consider only area in front of car to reduce chance of detecting unrelevant lines.
 
-[alt text][image4]
+![alt text][image4]
 
 6. Used Probabilistic Hough Line Transform to find possible lines.
 
-[alt text][image5]
+![alt text][image5]
 
 7. Removed lines with horizontal scope as they are unlikely road lines. 
 

@@ -10,6 +10,8 @@
 [image6]: ./test_pipeline/final.jpg "Final image"
 [image7]: ./test_images/solidYellowLeft.jpg "Initial"
 
+[video1]: ./test_videos_output/solidWhiteRight.mp4 "Sample 1"
+
 ---
 
 The goals / steps of this project are the following:
@@ -67,7 +69,7 @@ The processing pipeline consisted of 6 steps.
 
 ### Samples
 
-![Sample Video](test_videos_output/solidWhiteRight.mp4)
+![alt text][video1]
 
 <video width="960" height="540" controls>
   <source src="test_videos_output/solidYellowLeft.mp4">

@@ -64,3 +64,10 @@ The processing pipeline consisted of 6 steps.
 1. One of the possible improvement is to find a way to use average lines from the previous frames in the video stream to correct wrong lines behaviour and make them more smooth. Also this historic data can defenitly help to improve clustering algorithm metric to filter out noisy segments.
 
 2. Another improvement is to fit curved lines instead of linear regression approach. For example some ideas can be bororowed from this work:  https://arxiv.org/pdf/1501.03124.pdf
+
+<video width="960" height="540" controls>
+  <source src="test_videos_output/challenge.mp4">
+</video>
+
+https://github.com/alexeysas/sdc-lines-detector/blob/master/test_videos/challenge.mp4
+

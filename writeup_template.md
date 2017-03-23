@@ -1,17 +1,8 @@
-#**Finding Lane Lines on the Road** 
-
-##Writeup Template
-
-###You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
----
-
-**Finding Lane Lines on the Road**
+# **Finding Lane Lines on the Road**
 
 The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
-
+* Reflect the work in a written report
 
 [//]: # (Image References)
 
@@ -59,16 +50,16 @@ The processing pipeline consisted of 6 steps.
 ![alt text][image6]
 
 
-###2. Identify potential shortcomings with your current pipeline
+### Shortcomings 
 
+1. The potential shortcoming is that approach will not work so good if we have lines different color from white and yellow. Even if first step(HLS color filter) is removed to help with this tasks there will be difficulties in detecting lines for complex shadowed roads.
 
-One potential shortcoming would be what would happen when ... 
+2. Due to inperfect nature of my clustering algorithm there will be issues wilt line detection for the noisy road expecially with long vertical artifacts. 
 
-Another shortcoming could be ...
+3. As we filterd out mostly-horizontal segments - algorithm is not useful for the detecting lines for the turns.
 
+### Improvements
 
-###3. Suggest possible improvements to your pipeline
+1. One of the possible improvement is to find a way to use average lines from the previous frames in the video stream to correct wrong lines behaviour and make them more smooth. Also this historic data can defenitly help to improve clustering algorithm metric to filter out noisy segments.
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+2. Another improvement is to fit curved lines instead of linear regression approach. For example some ideas can be bororowed from this work:  https://arxiv.org/pdf/1501.03124.pdf

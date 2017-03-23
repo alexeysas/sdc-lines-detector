@@ -69,21 +69,10 @@ The processing pipeline consisted of 6 steps.
 
 ### Samples
 
-![alt text][video1]
-
     Here's a sample video:
 
     ![Sample Video](test_videos_output/solidWhiteRight.mp4)
 
 Here's a sample video:
 
-![Sample Video](img/markdown_video.mp4)
-
-<video width="960" height="540" controls>
-  <source src="test_videos_output/solidYellowLeft.mp4">
-</video>
-
-<video width="960" height="540" controls>
-  <source src="test_videos_output/challenge.mp4">
-</video>
-
+![Sample Video](test_videos_output/solidWhiteRight.mp4)

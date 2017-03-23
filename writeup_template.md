@@ -1,9 +1,5 @@
 # **Finding Lane Lines on the Road**
 
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect the work in a written report
-
 [//]: # (Image References)
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
@@ -12,12 +8,17 @@ The goals / steps of this project are the following:
 [image4]: ./test_pipeline/region.jpg "Region of Interest"
 [image5]: ./test_pipeline/segments.jpg "Hough Segments"
 [image6]: ./test_pipeline/final.jpg "Final image"
+[image7]: ./test_images/solidYellowLeft.jpg "Initial"
 
 ---
 
-### Reflection
+The goals / steps of this project are the following:
+* Make a pipeline that finds lane lines on the road
+* Reflect the work in a written report
 
-###
+![alt text][image7]
+
+### Reflection
 
 The processing pipeline consisted of 6 steps. 
 

@@ -65,9 +65,17 @@ The processing pipeline consisted of 6 steps.
 
 2. Another improvement is to fit curved lines instead of linear regression approach. For example some ideas can be bororowed from this work:  https://arxiv.org/pdf/1501.03124.pdf
 
+### Samples
+
+<video width="960" height="540" controls>
+  <source src="test_videos_output/solidWhiteRight.mp4">
+</video>
+
+<video width="960" height="540" controls>
+  <source src="test_videos_output/solidYellowLeft.mp4">
+</video>
+
 <video width="960" height="540" controls>
   <source src="test_videos_output/challenge.mp4">
 </video>
-
-https://github.com/alexeysas/sdc-lines-detector/blob/master/test_videos/challenge.mp4
 

@@ -69,10 +69,6 @@ The processing pipeline consisted of 6 steps.
 
 ### Samples
 
-    Here's a sample video:
-
-    ![Sample Video](test_videos_output/solidWhiteRight.mp4)
-
-Here's a sample video:
-
-![Sample Video](test_videos_output/solidWhiteRight.mp4)
+https://github.com/alexeysas/sdc-lines-detector/blob/master/test_videos_output/solidWhiteRight.mp4
+https://github.com/alexeysas/sdc-lines-detector/blob/master/test_videos_output/solidYellowLeft.mp4
+https://github.com/alexeysas/sdc-lines-detector/blob/master/test_videos_output/challenge.mp4
